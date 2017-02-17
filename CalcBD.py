@@ -1,3 +1,6 @@
+
+#                           ***  Still under test  ***
+
 import datetime
 
 
@@ -27,13 +30,15 @@ https://www.facebook.com/technical.expert.omar?ref=bookmarks\n\n''', '- _' * 20)
             elif (day > a.day) and (month > a.month) and (month > 5):
                 print('your age is', a.year-year-1, 'years &', month-a.month, 'months &', day-a.day, 'days')
             elif (day < a.day) and (month < a.month) and (month <= 5):
-                print('your age is', a.year-year, 'years &', a.month - month, 'months &', day - a.day, 'days')
+                print('your age is', a.year-year, 'years &', a.month - month, 'months &', a.day - day, 'days')
             elif (day > a.day) and (month < a.month) and (month > 5):
                 print('your age is', a.year - year-1, 'years &', a.month-month, 'months &', day - a.day, 'days')
             elif (day < a.day) and (month > a.month) and (month <= 5):
                 print('your age is', a.year - year, 'years &', month - a.month, 'months &', a.day - day, 'days')
             elif (day < a.day) and (month > a.month) and (month > 5):
                 print('your age is', a.year-year-1, 'years &', month-a.month, 'months &', a.day-day, 'days')
+            elif (day > a.day) and (month < a.month) and (month <= 5):
+                print('your age is', a.year - year, 'years &', a.month - month, 'months &', day - a.day, 'days')
             # ------- End General ------- #
 
                 # ------- Days -------- #
@@ -76,5 +81,5 @@ https://www.facebook.com/technical.expert.omar?ref=bookmarks\n\n''', '- _' * 20)
                       '.............................\n')
                 break
     except ValueError:
-        print('you make mistake')
+        quit('you make mistake')
 if __name__ == '__main__': main()
